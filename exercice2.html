@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>App Vue</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+</head>
+<body>
+    <div id="app">
+        {{firstname}}
+        <p>{{ mydetails()}}</p>
+    </div>
+</body>
+<script>
+    var vm = new Vue({
+        el: '#app',
+        data: {
+            firstname:"Albert",
+            lastname:"Pinto",
+            address:"Las Vegas",
+        },
+        methods: {
+            mydetails: function () {
+                return(
+                    "I am " + this.firstname + " " + this.lastname + " from " + this.address
+                )
+            },
+        },
+    });
+</script>
+</html>

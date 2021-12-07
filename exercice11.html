@@ -1,0 +1,33 @@
+<!-- Exemple de filtre -->
+
+<!DOCTYPE html>
+<html lang="fr">
+ <head>
+ <meta charset="utf-8" />
+ <title>Manipulation de vue</title>
+ <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+ </head>
+ <body>
+<div id="app">
+ {{temp}}
+ <input type="radio">bleu
+ <input type="radio">rouge 
+ <input type="radio">
+
+</div>
+ <script>
+ let vm = new Vue({
+ el: "#app",
+ data: {
+ temp: 21,
+ paragraphe:"<p>Paragraphe a afficher</p>"
+ },
+ methods:{
+     changerMetric:function(){
+
+     }
+ },
+ });
+ </script>
+ </body>
+</html>

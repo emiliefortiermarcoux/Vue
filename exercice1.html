@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>App Vue</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+</head>
+<body>
+    <div id="app">
+        <p>{{ mamethod()}}</p>
+    </div>
+</body>
+<script>
+    var vm = new Vue({
+        el: '#app',
+        data: {
+            message: 
+            'mon message',
+        },
+        methods: {
+            mamethod: function () {
+                this.message = "Bienvenue sur mon site!";
+            },
+        },
+    });
+</script>
+</html>

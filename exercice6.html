@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+</head>
+<body>
+    <div id="app">
+        <p>{{montexte}}</p>
+    </div>
+</body>
+<script>
+    var vm = new Vue({
+        el: '#app',
+        data: {
+            message: "ceci est une donnee message",
+            texte: "ceci est un data texte",
+            titre: "CECI EST UN TITRE",
+            color:"blue",
+        },
+        computed: {
+            montexte () {
+                return(
+                    this.texte + " " + this.titre
+                )
+            },
+        },
+    });
+</script>
+</html>

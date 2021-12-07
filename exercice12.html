@@ -1,0 +1,29 @@
+<!-- Evenement -->
+
+<!DOCTYPE html>
+<html lang="fr">
+ <head>
+ <meta charset="utf-8" />
+ <title>Manipulation de vue</title>
+ <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+ </head>
+ <body>
+     <div id="app">
+    <input type="button" v-on:click="increment">
+    {{nbClic}}
+    </div>
+        <script>
+ let vm = new Vue({
+ el: "#app",
+ data: {
+ nbClic: 0 ,
+},
+methods: {
+ increment:function(){
+ return this.nbClic++;
+ },
+}
+});
+ </script>
+ </body>
+</html>

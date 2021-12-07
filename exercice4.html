@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="fr">
+ <head>
+ <meta charset="utf-8" />
+ <title>Manipulation de vue</title>
+ <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+</head>
+
+ <body>
+
+    <div id="app" >
+        prenom: <input type="text" v-model="texte"/>
+     </div>
+
+
+ <script>
+ let vm = new Vue({
+ el: "#app",
+ data: {
+     message: "ceci est une donnee message",
+     texte: "ceci est un data texte",
+     titre: "CECI EST UN TITRE",
+     color:"blue",
+ },
+ });
+ </script>
+
+ </body>
+</html>
